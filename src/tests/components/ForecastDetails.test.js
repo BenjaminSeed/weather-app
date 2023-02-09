@@ -18,9 +18,7 @@ describe("ForecastDetails", () => {
 
   describe("ForecastDetails-snapshot", () => {
     it("renders props correctly", () => {
-      const { asFragment } = render(
-        <ForecastDetails forecast={validProps} /> // see line 7 of ForecastDetails.js
-      );
+      const { asFragment } = render(<ForecastDetails forecast={validProps} />);
 
       expect(asFragment()).toMatchSnapshot();
     });

@@ -1,5 +1,3 @@
-/* eslint-disable func-names */
-/* eslint-disable no-console */
 import axios from "axios";
 
 const getForecast = (
@@ -9,7 +7,7 @@ const getForecast = (
   setSelectedDate,
   setErrorMessage
 ) => {
-  let endpoint = "https://mcr-codes-weather.herokuapp.com/forecast";
+  let endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
 
   if (searchText) {
     endpoint += `?city=${searchText}`;
